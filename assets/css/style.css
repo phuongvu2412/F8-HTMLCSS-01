@@ -56,7 +56,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #e6f0ff;
-    height: 100vh; /* lap day viewport */
+    height: calc(100vh - 90px); /* lap day viewport */
     position: relative;
     }
 .navbar {
@@ -130,8 +130,8 @@ a {
 }
 /* CLIENTS */
 .clients {
-    margin-top: 79px;
-    padding: 43px 0px 61px;
+    margin-top: 280px;
+    padding: 43px 0px 64px;
 }
 .clients .row {
     display: flex;
