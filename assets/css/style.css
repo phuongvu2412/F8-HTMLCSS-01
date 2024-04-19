@@ -5,7 +5,10 @@
 :root {
     --primary-color: #0f1b4c;
 }
-
+html,
+body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -46,7 +49,7 @@ a {
 }
 /* HEADER */
 .fix-header {
-    background-color:#e6f0ff ;
+    background-color: #e6f0ff;
     padding-top: 26px;
     position: sticky;
     top: -26px;
@@ -54,11 +57,11 @@ a {
 }
 .hero-wrap {
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: #e6f0ff;
-    height: calc(100vh - 90px); /* lap day viewport */
-    position: relative;
-    }
+    height: calc(100vh - 90px);
+}
 .navbar {
     display: flex; /* cho cac the nam ngang */
     align-items: center;
@@ -87,38 +90,38 @@ a {
 }
 
 .navbar .action-btn {
-    padding: 13px 20px; /* chu y */
+    padding: 13px 16px; /* chu y */
     margin-left: 18px;
     border-radius: 8px;
 }
-.hero {
-    margin-top: 130px;
+.hero-wrap {
+    padding-top: 130px;
 }
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
-.hero .subtitle {
+.hero-wrap .subtitle {
     color: #687690;
     font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.01em;
 }
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     color: #000336;
     font-size: 6.2rem;
     font-weight: 700;
     line-height: 1.19; /* 118.75% */
 }
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5a6473;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.78;
 }
-.hero-cta {
+.hero-wrap-cta {
     text-align: center;
     min-width: 170px;
     margin-top: 40px;
